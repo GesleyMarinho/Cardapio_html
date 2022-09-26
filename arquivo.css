@@ -1,0 +1,18 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+
+}
+
+/* Style the header */
+h1 {
+    background-color: #666;
+    padding: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
