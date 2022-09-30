@@ -8,11 +8,89 @@ td {
 
 }
 
-/* Style the header */
+/* Style the header 
 h1 {
     background-color: #666;
     padding: 60px;
     text-align: center;
     font-size: 35px;
     color: white;
+}*/
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+button.slick-prev {
+    height: 51px;
+    width: 25px;
+    font-size: 0px;
+    border: nome;
+    background-color: transparent;
+    background-image: url('./img/anterior.png');
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+button.slick-next {
+    height: 51px;
+    width: 25px;
+    font-size: 0px;
+    border: nome;
+    background-color: transparent;
+    background-image: url('./img/proximo.png');
+    position: absolute;
+    top: 20%;
+    right: 14%;
+}
+
+ul.slick-dots li button {
+    display: inline-block;
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+
+}
+
+ul.slick-dots li.slick-active {
+
+    background-color: #00bac6;
 }
