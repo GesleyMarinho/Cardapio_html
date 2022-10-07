@@ -8,14 +8,13 @@ td {
 
 }
 
-/* Style the header 
-h1 {
+Style the header h1 {
     background-color: #666;
     padding: 60px;
     text-align: center;
     font-size: 35px;
     color: white;
-}*/
+}
 
 * {
     margin: 0 auto;
@@ -91,4 +90,16 @@ ul.slick-dots li button {
 ul.slick-dots li.slick-active {
 
     background-color: #363c13;
+}
+
+.Container {
+
+    box-sizing: border-box;
+    bottom: 0px;
+    width: 360px;
+    height: 120px;
+    /*margin: auto;*/
+    box-sizing: border-box;
+
+
 }
