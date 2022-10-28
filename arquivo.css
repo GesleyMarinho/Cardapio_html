@@ -1,0 +1,192 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+
+}
+
+body {
+    background-image: linear-gradient(to top, orange, rgba(255, 255, 0, 0.777));
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    font-style: italic;
+}
+
+p {
+    color: rgb(9, 9, 9);
+}
+
+
+Style the header h1 {
+    background-color: #666;
+    padding: 60px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}
+
+/*Stilização dos botõs para adicionar o retirar item*/
+.Container {
+    box-sizing: border-box;
+    bottom: 0px;
+    width: 360px;
+    height: 120px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*Stilização da troca do menu*/
+button.slick-next {
+    border: 2px black;
+    height: 51px;
+    width: 25px;
+    font-size: 0px;
+    border: nome;
+    background-color: transparent;
+    background-image: url('../Cardapio_html/img_produtos/proximo.jpeg');
+    position: absolute;
+    top: 20%;
+    right: 14%;
+}
+
+button.slick-prev {
+    border: 2px black;
+    font-size: 0px;
+    border: nome;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    background-image: url('../Cardapio_html/img_produtos/anterior.jpeg');
+    position: absolute;
+    top: 20%;
+    left: 14%;
+}
+
+ul.slick-dots li button {
+    display: inline-block;
+    font-size: 0px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #f1e210;
+}
+
+ul.slick-dots li.slick-active {
+    background-color: transparent;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: relative;
+    left: 50px;
+    top: -50px;
+}
+
+li.slick-active button {
+    background-color: red;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 15px;
+}
+
+/*Estilização do menu lateral*/
+:root {
+    --cor--principal: #746e6e;
+    --cor--secundaria: #504803;
+}
+
+#menu-produtos {
+    max-width: 350px;
+    width: 180px;
+    background-color: gray;
+    float: left;
+    position: absolute;
+    min-height: 100%;
+}
+
+#menu-produtos ul {
+    list-style: nome;
+    padding: 0;
+}
+
+#menu-produtos ul li {
+
+    border-bottom: 1px solid;
+    background-color: var(--cor--secundarias);
+
+}
+
+#menu-produtos ul li a {
+    background-color: var(--cor--principal);
+    color: aliceblue;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transition: background .3s;
+    text-transform: uppercase;
+
+}
+
+#menu-produtos ul li a:hover {
+    background-color: var(--cor--secundaria);
+    color: var(var(--cor--secundaria))
+}
