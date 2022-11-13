@@ -4,7 +4,7 @@ td {
     border: 1px solid black;
     text-align: center;
     background-color: transparent;
-    font-size: 30px;
+    font-size: 15px;
 
 }
 
@@ -73,8 +73,8 @@ Style the header h1 {
 .Container {
     box-sizing: border-box;
     bottom: 0px;
-    width: 360px;
-    height: 120px;
+    width: 260px;
+    height: 0px;
     text-align: center;
     margin: auto;
     box-sizing: border-box;
@@ -148,13 +148,8 @@ li.slick-active button {
     padding: 15px;
 }
 
-/*Estilização do menu lateral*/
-:root {
-    --cor--principal: #746e6e;
-    --cor--secundaria: #504803;
-}
 
-#menu-produtos {
+#barraLateral body{
     max-width: 350px;
     width: 180px;
     background-color: gray;
@@ -163,30 +158,21 @@ li.slick-active button {
     min-height: 100%;
 }
 
-#menu-produtos ul {
-    list-style: nome;
-    padding: 0;
-}
+/*menu para somar o preço dos itens*/
 
-#menu-produtos ul li {
-
-    border-bottom: 1px solid;
-    background-color: var(--cor--secundarias);
-
-}
-
-#menu-produtos ul li a {
-    background-color: var(--cor--principal);
-    color: aliceblue;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    transition: background .3s;
-    text-transform: uppercase;
+.barraLateral {
+    max-width: 450px;
+    width: 180px;
+    background-color: gray;
+    float: left;
+    position: absolute;
 
 }
 
-#menu-produtos ul li a:hover {
-    background-color: var(--cor--secundaria);
-    color: var(var(--cor--secundaria))
+.fechar-carrinho p{
+   color: #ffffff;
+    
+}
+.btnCarrinho {
+    margin: 5px;
 }
