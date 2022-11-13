@@ -1,5 +1,3 @@
-/*$('.slider-principal').slick();*/
-
 $('.slider-principal').slick({
     dots: true,
     infinite: true,
@@ -8,3 +6,4 @@ $('.slider-principal').slick({
     adaptiveHeight: true,
     autoplaySpeed: 2000
 });
+
