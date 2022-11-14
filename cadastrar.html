@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/cadastro.css">
-    <link rel="stylesheet" href="./PHP/">
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="incluir.php" method="POST">
+    <form action="conexao.php" method="POST">
         <div class="card-cadastro">
             <div class ="form-control">
-                usuario: <input type="Text" name ="usuario" class="input" placeholder="Entre com usuario"><br>
+                usuario: <input type="Text" required name ="USUÁRIO" class="input" placeholder="Entre com usuario"><br>
             </div>
 
             <div class ="form-control">
-                <!--Email: <input type="text" value="email"> <br>-->
-                email: <input type="Text" name ="email" class="input" placeholder="Entre com o email"><br>
+                email: <input type="Text" required  name ="EMAIL" class="input" placeholder="Entre com o email"><br>
             </div>
 
             <div class ="form-control">
-                senha: <input type="password" value="senha" ><br>
+                senha: <input type="password" required  name ="SENHA" class="input" placeholder="Digite sua senha"><br>
             </div>
 
             <div class ="form-control">
-                confirma Senha: <input type="password" value="confirmaSenha" placeholder=""><br>
+               
+                Confirma Senha: <input type="password" required name ="confirmaSenha" class="input" placeholder="confirme a senha "><br>
             </div>
                 
                 <input type="submit" value="Enviar">
