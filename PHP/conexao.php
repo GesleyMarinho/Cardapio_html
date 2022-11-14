@@ -9,7 +9,17 @@
   // Password is empty
   $password = "";
   $dbname = "CADASTRO";
-    
+
+  /*echo $_POST['usuario'];
+  echo $_POST['email'];
+  echo $_POST['senha'];
+  echo $_POST['confirmaSenha'];*/
+
+  $usuario = $_POST['usuario'];
+  $email = $_POST['email'];
+  $senha = $_POST['senha'];
+  $confirmaSenha = $_POST['confirmaSenha'];
+   
   // Creating a connection
   $conn = new mysqli($servername, 
               $username, $password, $dbname);
@@ -23,11 +33,10 @@
     echo "Conexão SUCESSO";
   }
 
-  /*$sql = "INSERT INTO CLIENTE (USER, EMAIL, SENHA,CONFIRMASENHA)
-  VALUES ('John','john@example.com', 123,123)";*/
+ 
 
   $sql = "INSERT INTO CLIENTE (USER, EMAIL, SENHA,CONFIRMASENHA)
-  VALUES (:nome, :email,:senha,:confirmaSenha)";
+  VALUES ('$usuario','$email', '$senha','$confirmaSenha')";
 
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
