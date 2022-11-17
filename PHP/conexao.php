@@ -10,11 +10,6 @@
   $password = "";
   $dbname = "CADASTRO";
 
-  /*echo $_POST['usuario'];
-  echo $_POST['email'];
-  echo $_POST['senha'];
-  echo $_POST['confirmaSenha'];*/
-
   $usuario = $_POST['usuario'];
   $email = $_POST['email'];
   $senha = $_POST['senha'];
@@ -30,8 +25,10 @@
       die("Connection failure: "
           . $conn->connect_error);
   } else{
-    echo "Conexão SUCESSO";
+    echo "Dados Gravados com SUCESSO";
+    
   }
+
 
  
 
