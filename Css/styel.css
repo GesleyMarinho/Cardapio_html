@@ -61,30 +61,19 @@ body * {
     font-weight: 800;
     margin: 0;
 }
-
-.textfield{
+.label{
+    text-align: left;
+}
+.textfield {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     box-sizing: border-box;
     margin: 10px 0px;
 }
 
-
-.textfield > input{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background-image: linear-gradient(to top, yellow, orange);;
-    color: black;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px yellow;
-    outline: none;
-    box-sizing: border-box;
-}
 
 .textfield > label{
     color: black;
@@ -110,6 +99,20 @@ body * {
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px yellow;
 }
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: linear-gradient(to top, yellow, orange);;
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px yellow;
+    outline: none;
+    box-sizing: border-box;
+}
+
 
 btn-cadastrar{
     width: 100%;
