@@ -5,10 +5,10 @@
     
   // In my case, user name will be root
   $username = "root";
-    
+ 
   // Password is empty
   $password = "";
-  $dbname = "CADASTRO";
+  $dbname = "cadastro";
 
   $usuario = $_POST['usuario'];
   $email = $_POST['email'];
@@ -29,14 +29,12 @@
     
   }
 
-
- 
-
   $sql = "INSERT INTO CLIENTE (USER, EMAIL, SENHA,CONFIRMASENHA)
   VALUES ('$usuario','$email', '$senha','$confirmaSenha')";
 
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
+    
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
