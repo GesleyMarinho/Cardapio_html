@@ -6,4 +6,5 @@ if(!isset($_SESSION)) {
 // pra sair da conta.
 session_destroy();
 
-header("Location: index.php");
+Header("Location: ../index.html"); // aqui deve chamar no na tela inicial para logar após o cadastrado;
+?>

@@ -12,6 +12,10 @@
 </head>
 
 <body>
+<?php
+session_start();
+?>
+
     <div id="menu-h">
         <nav>
             <ul>
@@ -31,7 +35,8 @@
                     <a href="#">Contato</a>
                 </li>
                 <li>
-                    <a href="#">BEM VINDO</a>
+                
+                     <?php echo "<a href='#'>BEM VINDO ". $_SESSION['nome'] . "</a>"; ?>
                 </li>
             </ul>
         </nav>

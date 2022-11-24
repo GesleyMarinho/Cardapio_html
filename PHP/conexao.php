@@ -1,8 +1,7 @@
 <?php
   
   // Server name must be localhost
-  $servername = "localhost";
-    
+  $servername = "localhost"; 
   // In my case, user name will be root
   $username = "root";
  
@@ -16,8 +15,7 @@
   $confirmaSenha = $_POST['confirmaSenha'];
    
   // Creating a connection
-  $conn = new mysqli($servername, 
-              $username, $password, $dbname);
+  $conn = new mysqli($servername, $username, $password, $dbname);
     
   // Check connection
   if ($conn->connect_error) {
@@ -26,15 +24,15 @@
           . $conn->connect_error);
   } else{
     echo "Dados Gravados com SUCESSO";
-    
+    Header("Location: logout.php"); // aqui chama no logout.php para destruir a página;
+
   }
 
   $sql = "INSERT INTO CLIENTE (USER, EMAIL, SENHA,CONFIRMASENHA)
   VALUES ('$usuario','$email', '$senha','$confirmaSenha')";
 
   if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    
+   // echo "New record created successfully";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }

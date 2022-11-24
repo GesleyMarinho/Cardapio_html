@@ -1,20 +1,5 @@
 <?php
 
-   /* $usuario = $_POST['usuario'];
-    $senha = $_POST['senha'];
-
-    echo $_POST['usuario'];
-    echo $_POST['senha'];
-  
-    
-    
-    if ($_POST['usuario'] && $_POST['senha']){
-        echo "<h1> Ok você entrou </h1>";
-        echo "<a href = 'home.html'>Clique aqui para entrar</a>";
-    }else{
-        echo "Você não está logado";
-    }*/
-
 include('./PHP/teste.php');
     //vamos verificar se os campos existem.
     if(isset($_POST['usuario']) || isset($_POST['senha'])) {
@@ -31,7 +16,7 @@ include('./PHP/teste.php');
             $sql_code = "SELECT * FROM cliente WHERE user = '$usuario' AND senha = '$senha'";
             $sql_query = $mysqli->query($sql_code); //or die("Falha na execução do código SQL: " . $mysqli->error);
 
-    //aqui vou saber se o cara está cadastrado, se tiver, deu certo, se nao, a senha esta incorreta
+            //aqui vou saber se o cara está cadastrado, se tiver, deu certo, se nao, a senha esta incorreta
             $quantidade = $sql_query->num_rows;
 
             if($quantidade == 1) {
@@ -45,7 +30,7 @@ include('./PHP/teste.php');
                 $_SESSION['id'] = $usuario['id'];
                 $_SESSION['nome'] = $usuario['nome'];
 
-                Header("Location: home.html"); //aqui é pra ir pra pagina ja logada, pagina principal
+                Header("Location: home.php"); //aqui é pra ir pra pagina ja logada, pagina principal
 
             } else {
                 echo "Falha ao logar! Usuário ou senha incorretos";
