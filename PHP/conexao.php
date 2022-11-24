@@ -23,7 +23,7 @@
       die("Connection failure: "
           . $conn->connect_error);
   } else{
-    echo "Dados Gravados com SUCESSO";
+    //echo "Dados Gravados com SUCESSO";
     Header("Location: logout.php"); // aqui chama no logout.php para destruir a página;
 
   }
