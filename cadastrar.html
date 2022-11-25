@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/cadastro.css">
-    <!--<script type="text/javascript" src="./JS/arquivo.js"></script>-->
     <script type="text/javascript">
         function validar(){
            var senha = cadastro.senha.value;
@@ -32,7 +31,7 @@
 
         function mostrarOcultarSenha(){
             var senha = document.getElementById("senha");
-            if(senha.type == "passowrd"){
+            if(senha.type == "password"){
                 senha.type ="text";
             }else{
                 senha.type="password";
@@ -42,14 +41,14 @@
 
         function mostrarOcultarConfirmaSenha(){
 
-            var confirmaSenha = document.getElementById("confirmaSenha");
-            if(confirmaSenha.type == "passowrd"){
-                confirmaSenha.type ="text";
+            var confirmaSenha = document.getElementById('confirmaSenha');
+            if(confirmaSenha.type == 'password'){
+                confirmaSenha.type ='text';
             }else{
-                confirmaSenha.type="password";
+                confirmaSenha.type='password';
             }
         }
-        
+
     </script>
     <title>Cadastro</title>
 </head>
@@ -65,15 +64,13 @@
             </div>
 
             <div class ="form-control">
-                senha: <input type="password" name ="senha"  placeholder="Digite sua senha" required><br>
+                senha: <input type="password" name ="senha" id ="senha" placeholder="Digite sua senha" required><br>
                 <input type="checkbox" onclick="mostrarOcultarSenha()">Mostrar senha
-               <!-- <script type="text/javascript" src="./JS/arquivo.js"></script>-->
             </div>
 
             <div class ="form-control">
-                Confirma Senha: <input type="password" name ="confirmaSenha"  placeholder="confirme a senha" required><br>
+                Confirma Senha: <input type="password" name ="confirmaSenha" id="confirmaSenha" placeholder="confirme a senha" required><br>
                 <input type="checkbox" onclick="mostrarOcultarConfirmaSenha()">Mostrar Confirma senha
-                <!--<script type="text/javascript" src="./JS/arquivo.js"></script>-->
             </div>
 
                 <input type="submit" value="Enviar" onclick="validar()">
