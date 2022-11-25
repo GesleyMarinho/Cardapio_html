@@ -46,12 +46,12 @@ session_start();
                 <li>
                     <a href="https://estacio.br/">Sobre</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#">Quem Somos</a>
                 </li>
                 <li>
                     <a href="#">Contato</a>
-                </li>
+                </li>-->
                 <li>
                 
                      <?php echo "<a href='#'>BEM VINDO ". $_SESSION['nome'] . "</a>"; ?>
