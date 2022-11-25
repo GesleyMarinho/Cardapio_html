@@ -5,28 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/cadastro.css">
+    <!--<script type="text/javascript" src="./JS/arquivo.js"></script>-->
+    <script type="text/javascript">
+        function validar(){
+           var senha = cadastro.senha.value;
+           var confirmaSenha = cadastro.confirmaSenha.value;
+
+           if(senha == "" || senha.length <=2){
+            alert('Preencha o campo SENHA com no minimo 3 caracteres');
+            cadastro.senha.focus();
+            return false;
+           }
+           
+           if(confirmaSenha == "" || confirmaSenha.length <=2){
+            alert('Preencha o campo CONFIRMA SENHA com no minimo 3 caracteres');
+            cadastro.confirmaSenha.focus();
+            return false;
+           }
+
+           if(senha != confirmaSenha){
+            alert('Senhas Diferentes');
+            forml.confirmaSenha.focus();
+            return false;
+           }
+        }
+
+        function mostrarOcultarSenha(){
+            var senha = document.getElementById("senha");
+            if(senha.type == "passowrd"){
+                senha.type ="text";
+            }else{
+                senha.type="password";
+            }
+        }
+
+
+        function mostrarOcultarConfirmaSenha(){
+
+            var confirmaSenha = document.getElementById("confirmaSenha");
+            if(confirmaSenha.type == "passowrd"){
+                confirmaSenha.type ="text";
+            }else{
+                confirmaSenha.type="password";
+            }
+        }
+        
+    </script>
     <title>Cadastro</title>
 </head>
 <body>
     <div class="card-cadastro">
-         <form method="POST" action="./PHP/conexao.php">
+         <form name="cadastro" method="POST"  action="./PHP/conexao.php">
             <div class ="form-control"> 
                 usuario: <input type="Text" name ="usuario"  placeholder="Entre com usuario" required><br>
             </div>
 
             <div class ="form-control">
-                email: <input type="email"  name ="email" required placeholder="nome@email.com"><br>
+                email: <input type="email"  name ="email"  placeholder="nome@email.com" required><br>
             </div>
 
             <div class ="form-control">
-                senha: <input type="password" name ="senha" required placeholder="Digite sua senha"><br>
+                senha: <input type="password" name ="senha"  placeholder="Digite sua senha" required><br>
+                <input type="checkbox" onclick="mostrarOcultarSenha()">Mostrar senha
+               <!-- <script type="text/javascript" src="./JS/arquivo.js"></script>-->
             </div>
 
             <div class ="form-control">
-               
-                Confirma Senha: <input type="password" name ="confirmaSenha" required placeholder="confirme a senha "><br>
+                Confirma Senha: <input type="password" name ="confirmaSenha"  placeholder="confirme a senha" required><br>
+                <input type="checkbox" onclick="mostrarOcultarConfirmaSenha()">Mostrar Confirma senha
+                <!--<script type="text/javascript" src="./JS/arquivo.js"></script>-->
             </div>
-                <input type="submit" value="Enviar">
+
+                <input type="submit" value="Enviar" onclick="validar()">
             </div>
         </form>
     </div>
