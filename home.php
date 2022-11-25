@@ -101,8 +101,7 @@ session_start();
     <span class="sr-only">Next</span>
   </a>
 </div>
-	<!--Bot carrousel-->
-
+	<!--Bot carrosel-->
 <!--div class="coll-100">
     <div class="slider-principal">
         <div> <img src="./img_sliders/pizza_slide960x334.jpg" /></div>
@@ -117,11 +116,10 @@ session_start();
         <h3> Meu Pedido  </h3>
         <!--exibir o preço final-->
         <p> Valor do Pedido: <span style="font-weight: bold;">R$<span class="value-cart">0,00</span></span> </p>
-        <!-- Aqui colocar os produtos que foram adicionados quantidade e valor-->
         <p>Pedido mínimo: <strong>R$25,00</strong></p>
         <p>Tempo médio de entrega: <strong>30 a 60 min</strong></p>
         
-        <a class="fechar-carrinho" href="/Carrinho">Fechar Pedido</a> <!--Exibir uma mensagem que o pedido está Okey-->
+        <a class="fechar-carrinho" href="carrinho.html">Fechar Pedido</a> <!--Exibir uma mensagem que o pedido está Okey-->
          
 </div>
 

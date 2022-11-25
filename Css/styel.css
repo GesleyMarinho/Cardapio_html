@@ -12,7 +12,7 @@ body * {
 .main-login{
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, orange, rgba(255, 255, 0, 0.777));;
+    background-image: linear-gradient(to top, orange, rgba(255, 255, 0, 0.777));
     display: flex;
     justify-content: center;
     align-items: center;
